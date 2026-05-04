@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "Instagram Sentiment Analysis",
+    "slug": "instagram-sentiment-analysis",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTabletMode": true,
+      "bundleIdentifier": "com.sentiment.analysis",
+      "infoPlist": {
+        "NSLocalNetworkUsageDescription": "This app uses local network to communicate with the backend",
+        "NSBonjourServiceTypes": [
+          "_http._tcp",
+          "_https._tcp"
+        ]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.sentiment.analysis",
+      "permissions": [
+        "INTERNET",
+        "ACCESS_NETWORK_STATE"
+      ]
+    },
+    "web": {
+      "bundleUrl": "https://localhost:8082"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": false
+        }
+      ]
+    ],
+    "scheme": "instagram-sentiment-analysis",
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "instagram-sentiment-analysis"
+      }
+    }
+  }
+}
